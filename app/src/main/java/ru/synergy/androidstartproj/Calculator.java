@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cursoradapter.widget.SimpleCursorAdapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -36,11 +37,16 @@ public class Calculator extends AppCompatActivity {
 //                // Shared prefs доступ с использованием контекста приложения
 //        SharedPreferences prefs = getApplicationContext().getSharedPreferences("PREFS", MODE_PRIVATE);
         ////
+
+
+        //// intent - это посылка
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.d(LogcatTag, "Button have been pushed");
                 calculateAnswe();
+                Intent i = new Intent(Calculator.this, MainActivity.class); //Написать письмо
+                startActivity(i);// Отправить письмо
             }
         });
 
@@ -84,6 +90,10 @@ public class Calculator extends AppCompatActivity {
         RadioButton sub = (RadioButton) findViewById(R.id.radioButton12);
         RadioButton mul = (RadioButton) findViewById(R.id.radioButton13);
         RadioButton div = (RadioButton) findViewById(R.id.radioButton14);
+
+        numOne.setText("0");
+        numTwo.setText("0");
+        add.setChecked(true);
 
         TextView answer = (TextView) findViewById(R.id.textView);
         TextView answer1 = (TextView) findViewById(R.id.textView6);
