@@ -2,4 +2,10 @@
     <string name="app_name">AndroidStartProj</string>
     <string name="android_is_the_best">Android is the best</string>
     <string name="approve">Approve</string>
+    <string name="game_settings">Game Settings</string>
+    <string name="sound_label">Sound Label</string>
+    <string name="difficulty_level">Difficulty Level</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
 </resources>
