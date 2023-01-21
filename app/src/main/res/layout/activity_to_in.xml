@@ -6,4 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".ToInActivity">
 
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="366dp"
+        android:layout_height="511dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
