@@ -143,7 +143,7 @@ public class Calculator extends AppCompatActivity {
         Log.d(LogcatTag, "The result of operations is: " + solution);
 
         answer.setText("Готово же  " + solution);
-        answer1.setText("Давай ещё )))");
+        answer1.setText("СВЕТОЧКА!!! Я ТЕБЯ ЛЮБЛЮ!!!");
 
         Context contextApp = getApplicationContext();
         Context context = getBaseContext();
